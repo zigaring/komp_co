@@ -1059,6 +1059,28 @@ if ( ! function_exists( 'owp_fs' ) ) {
 	}
 }
 
+//LOGIN IN LOGOUT V GLAVNEM MENIJU
+
+add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
+
+function add_loginout_link( $items, $args ) {
+
+   if (is_user_logged_in() && $args->theme_location == 'main_menu') {
+
+       $items .= '<li><a href="'. wp_logout_url( get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ) .'">Odjava</a></li>';
+
+   }
+
+   elseif (!is_user_logged_in() && $args->theme_location == 'main_menu') {
+
+       $items .= '<li><a href="' . get_permalink( woocommerce_get_page_id( 'myaccount' ) ) . '">Prijava</a></li>';
+
+   }
+
+   return $items;
+
+}
+
 #endregion
 
 new OCEANWP_Theme_Class;

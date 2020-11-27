@@ -1,0 +1,10 @@
+2020-11-27T22:15:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_loginout_link(), 1 passed in C:\xampp\htdocs\komp_co\wp-includes\class-wp-hook.php on line 289 and exactly 2 expected in C:\xampp\htdocs\komp_co\wp-content\themes\oceanwp\functions.php:1064
+Stack trace:
+#0 C:\xampp\htdocs\komp_co\wp-includes\class-wp-hook.php(289): add_loginout_link('<li id="menu-it...')
+#1 C:\xampp\htdocs\komp_co\wp-includes\plugin.php(206): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\komp_co\wp-includes\nav-menu-template.php(259): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\komp_co\wp-content\themes\oceanwp\partials\header\nav.php(162): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\komp_co\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\komp_co\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#6 C:\xampp\htdocs\komp_co\wp-includes\general-template.php(204): locate_template(Array, tr in C:\xampp\htdocs\komp_co\wp-content\themes\oceanwp\functions.php on line 1064
+

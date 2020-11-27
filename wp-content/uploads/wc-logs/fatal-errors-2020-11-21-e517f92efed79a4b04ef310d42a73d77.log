@@ -1,0 +1,26 @@
+2020-11-21T22:31:14+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\my-account.php on line 27
+
+2020-11-21T22:31:33+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\my-account.php on line 27
+
+2020-11-21T22:48:45+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_account_menu_items() in C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\navigation.php:27
+Stack trace:
+#0 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\wc-core-functions.php(344): include()
+#1 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3098): wc_get_template('myaccount/navig...')
+#2 C:\xampp\htdocs\komp_co\wp-includes\class-wp-hook.php(287): woocommerce_account_navigation('')
+#3 C:\xampp\htdocs\komp_co\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\komp_co\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\my-account.php(25): do_action('woocommerce_acc...')
+#6 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\wc-core-functions.php(344): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\ in C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\navigation.php on line 27
+
+2020-11-21T22:48:54+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_account_menu_items() in C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\navigation.php:27
+Stack trace:
+#0 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\wc-core-functions.php(344): include()
+#1 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3098): wc_get_template('myaccount/navig...')
+#2 C:\xampp\htdocs\komp_co\wp-includes\class-wp-hook.php(287): woocommerce_account_navigation('')
+#3 C:\xampp\htdocs\komp_co\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\komp_co\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\my-account.php(25): do_action('woocommerce_acc...')
+#6 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\wc-core-functions.php(344): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\includes\ in C:\xampp\htdocs\komp_co\wp-content\plugins\woocommerce\templates\myaccount\navigation.php on line 27
+
